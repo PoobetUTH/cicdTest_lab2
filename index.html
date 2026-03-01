@@ -3,38 +3,38 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Cool Page</title>
+    <title>Modern UI</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
     <div class="card">
-        <h1>Welcome to My Page 👋</h1>
-        <p>ลองกดปุ่มดูสิ ✨</p>
+        <h1>👩🏻‍💻 Poobet Web</h1>
+        <p class="subtitle">Modern • Clean • Interactive</p>
 
-        <div class="button-group">
-            <button class="btn primary" onclick="showMessage()">Say Hello</button>
-            <button class="btn success" onclick="changeColor()">Change Color</button>
-            <button class="btn danger" onclick="resetPage()">Reset</button>
+        <div class="buttons">
+            <button class="btn glow" onclick="showMessage()">✨ Say Hello</button>
+            <button class="btn dark" onclick="toggleDark()">🌙 Dark Mode</button>
+            <button class="btn reset" onclick="resetPage()">🔄 Reset</button>
         </div>
 
         <p id="message"></p>
     </div>
 
-    <script>
-        function showMessage() {
-            document.getElementById("message").innerText = "สวัสดี Poobet 🚀";
-        }
+<script>
+function showMessage() {
+    document.getElementById("message").innerHTML =
+        "🚀 Welcome to your deployed website!";
+}
 
-        function changeColor() {
-            document.body.style.backgroundColor = "#1e1e2f";
-            document.body.style.color = "white";
-        }
+function toggleDark() {
+    document.body.classList.toggle("dark-mode");
+}
 
-        function resetPage() {
-            location.reload();
-        }
-    </script>
+function resetPage() {
+    location.reload();
+}
+</script>
 
 </body>
 </html>
